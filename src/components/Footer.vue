@@ -3,8 +3,106 @@
     <footer>
         <section class="upFooter">
             <div class="sizeContainer">
-                <div class="links_box"></div>
-                <div class="big_logo"></div>
+                <div>
+                    <div class="links_box">
+                        <h2>DC COMICS</h2>
+                        <ul>
+                            <li>
+                                <a href="#">Characters</a>
+                            </li>
+                            <li>
+                                <a href="#">Comics</a>
+                            </li>
+                            <li>
+                                <a href="#">Movies</a>
+                            </li>
+                            <li>
+                                <a href="#">TV</a>
+                            </li>
+                            <li>
+                                <a href="#">Games</a>
+                            </li>
+                            <li>
+                                <a href="#">Videos</a>
+                            </li>
+                            <li>
+                                <a href="#">News</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="links_box">
+                        <h2>SHOP</h2>
+                        <ul>
+                            <li>
+                                <a href="#">Schop DC</a>
+                            </li>
+                            <li>
+                                <a href="#">Schop DC Collectibles</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="links_box">
+                    <h2>DC</h2>
+                    <ul>
+                        <li>
+                            <a href="#">Terms Of Use</a>
+                        </li>
+                        <li>
+                            <a href="#">Privacy Policy(News)</a>
+                        </li>
+                        <li>
+                            <a href="#">Add Choices</a>
+                        </li>
+                        <li>
+                            <a href="#">Advertising</a>
+                        </li>
+                        <li>
+                            <a href="#">Job</a>
+                        </li>
+                        <li>
+                            <a href="#">Subscriptions</a>
+                        </li>
+                        <li>
+                            <a href="#">Talent Workshops</a>
+                        </li>
+                        <li>
+                            <a href="#">CPSC Certificates</a>
+                        </li>
+                        <li>
+                            <a href="#">Ratings</a>
+                        </li>
+                        <li>
+                            <a href="#">Shop Help</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="links_box">
+                    <h2>SITES</h2>
+                    <ul>
+                        <li>
+                            <a href="#">DC</a>
+                        </li>
+                        <li>
+                            <a href="#">MAD Magazine</a>
+                        </li>
+                        <li>
+                            <a href="#">DC Kids</a>
+                        </li>
+                        <li>
+                            <a href="#">DC Universe</a>
+                        </li>
+                        <li>
+                            <a href="#">DC Power Visa</a>
+                        </li>
+                    </ul>
+                </div>
+                
             </div>
         </section>
         <section class="lowFooter">
@@ -49,7 +147,6 @@
 </template>
 
 <script>
-// script
 export default {
     name: "Footer"
 }
@@ -59,14 +156,35 @@ export default {
     footer {
         .upFooter {
             background-image: url('../assets/img/footer-bg.jpg');
-            background-position: center top;
             background-repeat: no-repeat;
+            background-position: center top;
             background-size: cover;
-            height: 350px;
+            position: relative;
 
             .sizeContainer {
+                background-image: url('../assets/img/dc-logo-bg.png');
+                background-position: right center;
+                background-repeat: no-repeat;
+                height: 100%;
+                padding: 40px 0px;
+
                 display: flex;
-                justify-content: space-between;
+
+                .links_box {
+                    margin-right: 30px;
+                    margin-bottom: 15px;
+
+                    a {
+                        color: grey;
+                        font-size: 14px;
+                    }
+
+                    h2 {
+                        color: white;
+                        font-size: 20px;
+                        margin-bottom: 10px;
+                    }
+                }
             }
         }
         .lowFooter {
