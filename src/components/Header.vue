@@ -8,7 +8,7 @@
             <nav>
                 <ul>
                     <li v-for="(item, index) in menu" :key="index" >
-                        <a :href="item.url" v-bind:class="item.current == true ? 'active' : '' ">{{ item.text }}</a>
+                        <a :href="item.url" v-bind:class="item.current==true?'active':''">{{ item.text }}</a>
                     </li>
                 </ul>
             </nav>
@@ -109,7 +109,7 @@ export default {
                         color: rgb(70, 70, 70);
                         font-weight: 700;
 
-                        &.ciao {
+                        &.active {
                             color: #0282f9;
                         }
                     }
