@@ -8,7 +8,7 @@
             <nav>
                 <ul>
                     <li v-for="(item, index) in menu" :key="index" >
-                        <a :href="item.url" v-bind:class="item.current==true?'active':''">{{ item.text }}</a>
+                        <a :href="item.url">{{ item.text }}</a>
                     </li>
                 </ul>
             </nav>
@@ -83,7 +83,7 @@ export default {
 <style lang="scss" scoped>
 // @import './variables';
     header {
-        height: 120px;
+        height: 100px;
 
         .sizeContainer {
             height: 100%;
@@ -93,6 +93,8 @@ export default {
 
             .logo {
                 height: 70%;
+                cursor: pointer;
+                
                 img {
                     height: 100%;
                 }               
@@ -100,20 +102,25 @@ export default {
 
             nav ul {
                 display: flex;
-                align-items: center;
+                align-items: center;               
 
                 li {
                     margin-left: 40px;
+                    height: 100px;
+                    line-height: 100px;
+                    border-bottom: 5px solid rgba(255, 0, 0, 0);
+                    cursor: pointer;
                     
                     a {
                         color: rgb(70, 70, 70);
                         font-weight: 700;
-
-                        &.active {
-                            color: #0282f9;
-                        }
                     }
-                    
+                }
+                li:hover {
+                    border-bottom: 7px solid #0282f9;
+                    a {
+                        color: #0282f9;
+                    }
                 }
             }
         }

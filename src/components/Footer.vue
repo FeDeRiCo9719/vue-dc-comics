@@ -176,10 +176,14 @@ export default {
                 .links_box {
                     margin-right: 30px;
                     margin-bottom: 15px;
+                    cursor: pointer;
 
                     a {
                         color: grey;
                         font-size: 14px;
+                    }
+                    a:hover {
+                        color: #0282f9;
                     }
 
                     h2 {
