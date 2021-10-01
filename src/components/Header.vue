@@ -3,7 +3,7 @@
     <header>
         <div class="sizeContainer">
             <div class="logo">
-                <img src="@/assets/img/dc-logo.png" alt="Logo Dc">
+                <img src="../assets/img/dc-logo.png" alt="Logo Dc">
             </div>
             <nav>
                 <ul>

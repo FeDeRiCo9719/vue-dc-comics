@@ -1,7 +1,8 @@
 <template>
 
     <footer>
-        <section class="upFooter">
+        <!-- top footer  -->
+        <section class="topFooter">
             <div class="sizeContainer">
                 <div>
                     <div class="links_box">
@@ -30,6 +31,7 @@
                             </li>
                         </ul>
                     </div>
+
                     <div class="links_box">
                         <h2>SHOP</h2>
                         <ul>
@@ -41,6 +43,7 @@
                             </li>
                         </ul>
                     </div>
+
                 </div>
                 
                 <div class="links_box">
@@ -115,27 +118,27 @@
                     <ul class="social_links">
                         <li>
                             <a href="#">
-                                <img src="@/assets/img/footer-facebook.png" alt="">
+                                <img src="../assets/img/footer-facebook.png" alt="">
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <img src="@/assets/img/footer-twitter.png" alt="">
+                                <img src="../assets/img/footer-twitter.png" alt="">
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <img src="@/assets/img/footer-youtube.png" alt="">
+                                <img src="../assets/img/footer-youtube.png" alt="">
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <img src="@/assets/img/footer-pinterest.png" alt="">
+                                <img src="../assets/img/footer-pinterest.png" alt="">
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <img src="@/assets/img/footer-periscope.png" alt="">
+                                <img src="../assets/img/footer-periscope.png" alt="">
                             </a>
                         </li>
                     </ul>
@@ -154,7 +157,7 @@ export default {
 
 <style lang="scss" scoped>
     footer {
-        .upFooter {
+        .topFooter {
             background-image: url('../assets/img/footer-bg.jpg');
             background-repeat: no-repeat;
             background-position: center top;
@@ -204,6 +207,10 @@ export default {
                     color: white;
                     font-size: 16px;
                     cursor: pointer;
+                }
+                button:hover {
+                    transition: 0.2s;
+                    background-color: #0282f9;
                 }
 
                 .follow {
