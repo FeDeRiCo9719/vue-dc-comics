@@ -6,16 +6,14 @@
             <div class="sizeContainer">
                 <!-- items -->
                 <div class="boxComics">
-                    <div>a</div>
-                    <div>a</div>
-                    <div>a</div>
-                    <div>a</div>
-                    <div>a</div>
-                    <div>a</div>
-                    <div>a</div>
-                    <div>a</div>
-                    <div>a</div>
-                    <div>a</div>
+
+                    <div class="superheroBox" v-for="(item,index) in series" :key="index">
+                        <div class="imgSuperhero">
+                            <img :src="item.thumb" alt="img SuperEroe">
+                        </div>
+                        <h4>{{ item.series }}</h4>
+                    </div>
+                    
                 </div>
 
                 <!-- button -->
@@ -150,11 +148,11 @@ export default {
 
 <style lang="scss" scoped>
     main {
-        background-color: rgb(37, 37, 37);
+        background-color: rgb(17, 17, 17);
 
-        .contents {
-            padding: 20px;
-            padding-top: 50px;
+        .contents {           
+            padding-top: 80px;
+            padding-bottom: 50px;
 
             .sizeContainer {
                 display: flex;
@@ -167,12 +165,26 @@ export default {
                 display: flex;
                 justify-content: center;
                 flex-wrap: wrap;
-                gap: 10px;
+                gap: 40px;
 
-                div {
-                    width: 250px;
-                    height: 250px;
-                    background-color: red;
+                .superheroBox {
+                    width: 180px;
+                    cursor: pointer;
+
+                    .imgSuperhero {
+                        height: 180px;
+                        width: 180px;
+                        overflow: hidden;
+                        img {
+                            width: 100%;
+                        }
+                    }
+                    h4 {
+                        color: rgb(199, 199, 199);
+                        font-size: 20px;
+                        font-weight: 500;
+                        margin-top: 10px;
+                    }
                 }
             }
 

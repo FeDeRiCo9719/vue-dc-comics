@@ -114,6 +114,7 @@ export default {
                     a {
                         color: rgb(70, 70, 70);
                         font-weight: 700;
+                        font-size: 18px;
                     }
                 }
                 li:hover {

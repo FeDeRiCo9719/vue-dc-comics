@@ -2,7 +2,7 @@
     <!-- HERO -->
     <section class="hero" :style="`background-image: url(${imgBg})`">
         <div class="sizeContainer">
-            <button>CURRENT SERIES</button>
+            <div>CURRENT SERIES</div>
         </div>
     </section>
 </template>
@@ -25,18 +25,17 @@ export default {
             height: 500px;
             position: relative;
 
-            button {
+            div {
                 position: absolute;
-                bottom: -20px;
+                bottom: -30px;
                 left: 0px;
 
-                padding: 10px 30px ;
+                padding: 10px 40px ;
                 background-color: #0282f9;
                 color: white;
                 border: 1px solid #0282f9;     
-                font-size: 24px;
+                font-size: 30px;
                 font-weight: 700;
-                cursor: pointer;
             }
         }
     }
